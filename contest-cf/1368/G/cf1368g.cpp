@@ -121,6 +121,6 @@ int main () {
 		lep (i, l, r) modify (1, 1, lim, q[i].L, q[i].R, q[i].opt);
 		ans += 1ll * ((r == cnt ? lim + 1 : q[r + 1].tim) - q[r].tim) * query ();
 	}
-	printf ("%lld\n", ans >> 1ll);
+	printf ("%lld\n", ans / 2);
 	return 0;
 }
